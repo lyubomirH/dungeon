@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Recursive Dungeon – Голямото бягство</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏰 Recursive Dungeon</h1>
+    <p>Функционално програмиране · Рекурсия · Backtracking</p>
+  </header>
+
+  <main>
+    <section class="board-wrap">
+      <div id="board" class="board"></div>
+      <div class="legend">
+        <span>🧍 S</span><span>🚪 E</span><span>🧱 #</span>
+        <span>🔑 K</span><span>🔒 D</span><span>💣 мина</span>
+        <span>🚩 флаг</span><span class="fog">░ неразкрито</span>
+      </div>
+      <p style="text-align:center; color:#8b98a9; margin-top:10px;">
+        Използвай <b>W, A, S, D</b> за движение и <b>Q</b> за поставяне на флаг пред теб.
+      </p>
+    </section>
+
+    <aside class="panel">
+      <h2>Управление</h2>
+      <button id="btn-all">📜 Всички маршрути</button>
+      <button id="btn-optimal">⭐ Оптимален</button>
+      <button id="btn-new">🎲 Нова карта</button>
+      <button id="btn-reset">🔄 Рестартирай</button>
+
+      <h2>Инвентар</h2>
+      <div id="inventory" class="inventory"></div>
+
+      <h2>Статистика</h2>
+      <div id="stats" class="stats"></div>
+    </aside>
+  </main>
+
+  <section class="routes">
+    <h2>Открити маршрути</h2>
+    <div id="routes-list" class="routes-list"></div>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
